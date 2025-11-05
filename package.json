@@ -1,20 +1,49 @@
 {
   "name": "gd-farms-backend",
-  "version": "1.0.0",
-  "description": "Backend for GD Farms Business Tracker",
+  "version": "1.1.0",
+  "description": "GD Farms Business Tracker API — a scalable Express + PostgreSQL backend powered by Neon.",
+  "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "lint": "eslint . --ext .js",
+    "format": "prettier --write .",
+    "test": "node --test"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "cors": "^2.8.5",
-    "pg": "^8.11.3",
     "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.12.0",
     "uuid": "^9.0.1"
   },
+  "devDependencies": {
+    "eslint": "^9.14.0",
+    "nodemon": "^3.1.0",
+    "prettier": "^3.3.3"
+  },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "express",
+    "postgresql",
+    "neon",
+    "backend",
+    "api",
+    "gd-farms",
+    "business-tracker",
+    "nodejs"
+  ],
+  "author": "GD Farms Development",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gdzfarms/gd-farms-backend"
   }
 }
+
